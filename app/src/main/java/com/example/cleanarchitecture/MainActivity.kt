@@ -5,7 +5,9 @@ import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.multidex.MultiDex
+import dagger.hilt.android.HiltAndroidApp
 
+@HiltAndroidApp
 class MainActivity : Application() {
 
     override fun onCreate() {

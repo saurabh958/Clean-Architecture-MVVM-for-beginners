@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="albumViewModel"
+            type="com.example.cleanarchitecture.presentation.album.AlbumViewModel" />
+
+    </data>
+
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true"
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            android:textSize="@dimen/title"
+            android:textColor="@color/colorTextSecondary"
+            android:text="@{albumViewModel.album.title}"/>
+    </androidx.cardview.widget.CardView>
+
+</layout>
